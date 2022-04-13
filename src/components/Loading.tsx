@@ -6,7 +6,6 @@ const Loading: FunctionComponent = (props) => {
   const loading = useSelector(
     (state: IInitialState) => state.reducer.isLoading
   );
-
   loading && <>Loading...</>;
   return <>{props.children}</>;
 };

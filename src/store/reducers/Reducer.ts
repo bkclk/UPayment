@@ -11,11 +11,7 @@ const initialState: IInitialState = {
         isLoading: false,
         error: undefined
     }
-
 };
-
-
-
 const Reducer = (state = initialState, action: Actions) => {
     switch (action.type) {
         case ActionType.GET_CATEGORIES:
@@ -79,5 +75,4 @@ const Reducer = (state = initialState, action: Actions) => {
             return state
     }
 }
-
 export default Reducer;

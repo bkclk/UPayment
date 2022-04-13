@@ -5,6 +5,7 @@ import { bindActionCreators } from "redux";
 import { actionCreators } from "../../store";
 import { IInitialState } from "../../types";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+
 const DetailedProduct = () => {
   const { id } = useParams<{ id?: string }>();
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ const DetailedProduct = () => {
     (state: IInitialState) => state.reducer.activeProduct
   );
   const navigate = useNavigate();
+
   useEffect(() => {
     getProduct(id);
   }, []);

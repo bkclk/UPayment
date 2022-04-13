@@ -1,6 +1,4 @@
-
 import { CategoryType, ProductType } from "../../types";
-
 
 export enum ActionType {
     SELECTED_CATEGORY = "SELECTED_CATEGORY",

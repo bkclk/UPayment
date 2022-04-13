@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../store";
 import { IInitialState } from "../types";
+import { HiChevronDown } from "react-icons/hi";
 
 interface CreateProductProps {
   setValue: (value: string) => void;
@@ -35,7 +36,7 @@ const CategoryForm: FunctionComponent<CreateProductProps> = (props) => {
                 rounded
                 transition
                 ease-in-out
-                m-0
+                cursor-pointer
                 focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none"
         aria-label=".form-select-sm example"
       >
@@ -46,6 +47,7 @@ const CategoryForm: FunctionComponent<CreateProductProps> = (props) => {
           </option>
         ))}
       </select>
+      <HiChevronDown className="absolute right-2 top-2 text-xl" />
     </div>
   );
 };

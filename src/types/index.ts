@@ -8,14 +8,11 @@ export interface ProductType {
     description: string;
     developerEmail: string;
 }
-
-
 export interface CategoryType {
     createdAt: Date;
     name: string;
     id: string;
 }
-
 export interface IInitialState {
     reducer: {
         categories?: CategoryType[],
@@ -26,5 +23,4 @@ export interface IInitialState {
         isLoading: boolean,
         error?: string
     }
-
 }

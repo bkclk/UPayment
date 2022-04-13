@@ -11,7 +11,6 @@ const Layout = () => {
     (state: IInitialState) => state.reducer.error
   );
   toast.error(errorMessage, { position: toast.POSITION.BOTTOM_RIGHT });
-  console.log(errorMessage);
   return (
     <div className=" bg-slate-100  h-screen">
       <div className="container   px-4">

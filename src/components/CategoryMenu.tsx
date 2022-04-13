@@ -37,7 +37,7 @@ const CategoryMenu = () => {
                 rounded
                 transition
                 ease-in-out
-                m-0
+                cursor-pointer
                 focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none"
         aria-label=".form-select-sm example"
       >

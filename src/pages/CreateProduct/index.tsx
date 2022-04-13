@@ -7,6 +7,7 @@ import { bindActionCreators } from "redux";
 import { actionCreators } from "../../store";
 import { useNavigate } from "react-router-dom";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+import SubmitTextArea from "../../components/SubmitTextArea";
 
 const CreateProduct = () => {
   const [productName, setProductName] = useState<string>("");
@@ -31,7 +32,6 @@ const CreateProduct = () => {
     };
     addProduct(newProduct, navigate);
   };
-  console.log(selectedCategory);
   return (
     <div
       className="container  min-w-80 max-w-2xl px-28 flex flex-col justify-around "
@@ -45,7 +45,7 @@ const CreateProduct = () => {
           value={productName}
         />
         <SubmitForm name={"Email"} setValue={setUserEmail} value={userEmail} />
-        <SubmitForm
+        <SubmitTextArea
           name="Description"
           setValue={setProductDescription}
           value={productDescription}

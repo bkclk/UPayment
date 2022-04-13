@@ -27,7 +27,10 @@ const ProductCard: FunctionComponent<ProductsProps> = (props) => {
         />
       </div>
       <h4 className="font-semibold text-center mt-1">{props.product.name}</h4>
-      <h4 className="font-semibold text-center"> $ {props.product.price}</h4>
+      <h4 className="font-semibold text-center mb-1">
+        {" "}
+        $ {props.product.price}
+      </h4>
       <button
         className="bg-red-600  text-white p-1 rounded-lg shadow-lg"
         onClick={() => deleteProduct(props.product.id)}

@@ -1,10 +1,11 @@
 import Categories from "../../components/Categories";
 import Products from "../../components/Products";
-import { AiFillPlusCircle } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import { AiFillPlusCircle } from "react-icons/ai";
 
 const Home = () => {
   const navigate = useNavigate();
+
   return (
     <div>
       <Categories />

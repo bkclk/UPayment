@@ -6,14 +6,14 @@ interface CreateProductProps {
   name: string;
 }
 
-const SubmitForm: FunctionComponent<CreateProductProps> = (props) => {
+const SubmitTextArea: FunctionComponent<CreateProductProps> = (props) => {
   return (
     <div>
-      <input
-        type={props.name === "Email" ? "email" : "text"}
+      <textarea
         value={props.value}
         onChange={(e) => props.setValue(e.target.value)}
-        className="form-input  w-full           
+        rows={3}
+        className="w-full           
                 px-3
                 py-2
                 text-sm
@@ -25,11 +25,12 @@ const SubmitForm: FunctionComponent<CreateProductProps> = (props) => {
                 rounded
                 placeholder-opacity-50
                 tracking-wide
-                overflow-hidden"
+                overflow-y-auto
+                resize-none"
         placeholder={props.name}
       />
     </div>
   );
 };
 
-export default SubmitForm;
+export default SubmitTextArea;
